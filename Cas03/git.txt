@@ -31,3 +31,4 @@ Private / Public
 6. git branch -M main                           <- glavni branch
 7. git remote add origin linkRepo-add           <- vezuje lokalnu verziju repo-a na online repo
 8. git push -u origin main                      <- salje promjene na remote/online repo
+8.1 SignIn preko browser-a ako nismo vec 
