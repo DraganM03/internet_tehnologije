@@ -19,10 +19,13 @@ Private / Public
 -- Komande za inicijalizaciju --
 
 - Za vezivanje sa profilom -
+
 1. git config --global user.name "username"
 2. git config --global user.email "email"
 
+
 - Za vezivanje sa repo-om -
+
 1. Podesimo putanju u CMD-u
 2. git init
 3. git add imeFajla/Foldera    ili   git add .  <- dodaje sve iz trenutnog foldera
