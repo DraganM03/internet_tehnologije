@@ -1,0 +1,127 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#hamburger,
+label {
+    display: none;
+}
+
+header#navbar {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #32328a;
+}
+
+header#navbar span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header#navbar nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+header#navbar nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+
+section#title {
+    background-color: #3f3f8f;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+section#title h1 {
+    font-size: 3rem;
+}
+
+section#title p {
+    font-size: 1.5rem;
+}
+
+section#main {
+    padding: 3rem;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+    box-sizing: border-box;
+}
+
+section#main h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+section#main div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    row-gap: 2rem;
+    gap: 2rem;
+}
+
+section#main div.cards div.card {
+    flex: 0 0 27%;
+    text-align: left;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    header#navbar nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 4rem;
+    }
+
+    header#navbar nav ul {
+        flex-direction: column;
+        background-color: #32328a;
+        padding: 1rem;
+    }
+
+    header#navbar {
+        flex-wrap: wrap;
+    }
+
+    header#navbar div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header#navbar label {
+        display: block;
+        color: white;
+        font-size: 2rem;
+    }
+
+    header#navbar #hamburger:checked + nav {
+        display: block;
+    }
+}
